@@ -1,8 +1,10 @@
-/*const log = function(log) {
-console.log(log); 
-}
-log(1)*/
-"Ctrl + shift + i"
+//
+//*
+//?
+//!
+////
+"use strict";
+const GPT = "Ctrl + shift + i"
 const log = (log) => {console.log(log)};
 const dir = (dir) => {console.dir(dir)};
 
@@ -103,7 +105,8 @@ console.log(calcMassIndex(height,weight));*/
     str = str.split("");
     const indexComa = str.indexOF
     console.log(str);*/
-/*dz1*//*
+/*dz1*/
+/*
 let number = [3, 6, -1, 8, 2, 10];
 let smollerNumb = minNumberFunction(number);
 function minNumberFunction(arr) {
@@ -116,7 +119,8 @@ smaller = arr[i];
 return smaller;
 }
 console.log(smollerNumb); */
-/*or*//*
+/*or*/
+/*
 const a = [1,5,8,10,-1,5];
 console.log(Math.min(...a));*/
 /*dz3*/
@@ -141,7 +145,8 @@ function getVeluesFromArray(arr,...arges){
     return result;
 }
 console.log(getVeluesFromArray(arrFirst, 7,5,2,8))
-console.log(getVeluesFromArray(arrSec, 57,70,67,78,50))*//*
+console.log(getVeluesFromArray(arrSec, 57,70,67,78,50))*/
+/*
 const arrFirst = [1,2,3,4,5]
 const arrSec = [10,20,30,40,50,60,70,80,90]
 function getVeluesFromArray(arr,...arges){
@@ -176,7 +181,8 @@ console.log(c);*/
 
 
 
-/*dz2*//*
+/*dz2*/
+/*
 let array = [1, 0, 2, 0, 3, 4, 0, 5];
 let zero = 0;
 
@@ -199,7 +205,8 @@ if (zero > 0) {
 
 
 
-/*задача 8 выдео1*//*
+/*задача 8 выдео1*/
+/*
 let userInfo = {
     name: "Вася",
     age: 30,
@@ -314,7 +321,8 @@ let zero1 = 0;
 
 
 
-/*28.03*//*
+/*28.03*/
+/*
 const shopList = {
     produkts: [
     ],
@@ -376,20 +384,20 @@ log(shopList.sumPrices("apple"))
 
 
 /*дз*/
-/*
-function max(products) {
-    products.sort((p1, b1) => b1.price - p1.price);
-    console.log(`Самый дорогой ${products[0].name}, цена ${products[0].price}`);
-}
-const products = [
-    { name: "Манго", price: 83 },
-    { name: "Банан", price: 59 },
-    { name: "Вишня", price: 37 },
-    { name: "Ківі", price: 94 },
-];
-log(max(products));
 
-*/
+// function max(products) {
+//     products.sort((p1, b1) => b1.price - p1.price);
+//     console.log(`Самый дорогой ${products[0].name}, цена ${products[0].price}`);
+// }
+// const products = [
+//     { name: "Манго", price: 83 },
+//     { name: "Банан", price: 59 },
+//     { name: "Вишня", price: 37 },
+//     { name: "Ківі", price: 94 },
+// ];
+// log(max(products));
+
+
 // const user = {
 //     age: 24,
 //     password: 'йцукен123',
@@ -430,4 +438,211 @@ log(max(products));
 // log(validator1(user));
 // log(validator2(user1));
 
-const a = 0; 
+
+
+// const numbers = [1,5,11,15,6,78];
+// const coleBack = function (e, i){
+//     numbers.forEach(coleBack); 
+// }
+// //numbers.forEach((e,i, arr) => {
+// //    log(log(`${i}:${e}:---${arr[i]}`));
+// //    arr.pop();
+// //    log(arr.length)
+// //});
+// numbers.forEach((e,i, arr) => {
+//     if(e === 5){
+//         return;
+//     }
+// }
+    
+
+
+// const sum = (...arguments) => {
+//     return arguments;
+// }
+// log(sum(1,2,3));
+
+
+// const products = [
+//     {type:"@342424", name:["banana", "kivi",["sdfs"]]},
+//     {type:"@342424", name:["banana2", "kivi1"]},
+// ];
+// const nameProd = products.flatMap(product => product.name);
+// // products.forEach(product => nameProd.push(product.name));
+// log(nameProd);
+
+
+
+// const products = [
+//         { name: "Манго", price: 83 },
+//         { name: "Банан", price: 59 },
+//         { name: "Вишня", price: 37 },
+//         { name: "Ківі", price: 94 },
+//     ];
+//     const result = (products.filter(product => product.price > 50));
+//     log(result);
+
+
+
+
+// const storages = [
+//     { storage: "Манг", name:  ["sdfdgdfg1", "sdfdsfsd"] },
+//     { storage: "Бана", name: ["sdfdgdfg1", "sdfdsfsd1"] },
+//     { storage: "Вишн", name: ["sdfdgdfg", "sdfdsfsd2"] },
+//     { storage: "Ківі", name: ["sdfdgdfg", "sdfdsfsd3"] },
+// ];
+
+// const namesStorages = storages
+// .reduce((accum, {name}) => {
+//     accum.push(...name);
+//     return accum;
+// },[])
+// const Filtern = namesStorages.filter((e,i) => namesStorages.indexOf(e) === i);
+// log(namesStorages)
+// log(Filtern)
+
+// let total = 0;
+// products.forEach(() => total += price)
+// log(total);
+// const array1 = [1, 2, 3, 4];
+
+// const total = products.reduce(function(accumulator, product) {
+// return accumulator + product.price;
+// }, 0 );
+// log(total);
+
+
+// const products = [
+//         { name: "Манго", price: 83 },
+//         { name: "Банан", price: 59 },
+//         { name: "Вишня", price: 37 },
+//         { name: "Ківі", price: 94 },
+//     ];
+//     products.sort((a, b) => a.price - b.price);
+//     log(products);
+
+
+/*forEach*/
+// const arr = [5, 6, 7, 8, 9];
+// const newArr = [];
+// arr.forEach(elem => {
+// 	newArr.push(elem * elem);
+// });
+// log(newArr)  
+
+// let arr = [5, 6, 7, 8, 9];
+// let sum = 0;
+// arr.forEach(function(elem) { //elem елемент к которому ми ето применяем = все елементи масива
+// 	sum += elem;
+// });
+// log(sum)  
+
+/*map*/
+
+// const arr = [5, 6, 7, 8, 9];
+// const newArr = [];
+// arr.map(elem => {
+//     newArr.push(elem * elem);
+// });
+// log(newArr)  
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let check = arr.every(function(elem) {
+// 	if (elem >= 50) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// });
+
+// console.log(check);
+
+// let arr = [-1, -2, -3, 4];
+
+// let check = arr.some(function(elem) {
+// 	if (elem <= 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// });
+
+// console.log(check);
+
+/*filter*/
+// const arr = [1, -3, 5, 6, -7, 8, 9, -11];
+// function func(elem){return elem % 2 == 0};
+// const newArr = arr.filter(func);
+// log(newArr); 
+
+// const arr = ["123456","123","123456789"];
+// function str5(elem) {
+//     return elem.length >= 5;
+// };
+// const len5 = arr.filter(str5)
+// log(len5)
+
+// var arr = [1, 'string', [3, 4], 5, [6, 7]];
+// function func(elem){return Array.isArray(elem)}; что делает етот код
+// var newArr = arr.filter(func);
+// log(newArr); 
+
+// const arr = [1, -3, 5, 6, -7, 8, 9, -11];
+// const arrMin = [];
+// function func(elem) {
+//     if (elem <= 0) {
+//         arrMin.push(elem)
+//     } else {
+        
+//     }
+// }
+// const newArr = arr.filter(func);
+// log(arrMin);
+
+
+/*reduse*/
+// let arr = [1, 2, 3, 4, 5, 6];
+// let result = arr.reduce(function(sum, elem) {
+// 	return sum + elem;
+// }, 0);
+// console.log(result);
+
+// let arr = [1, 2, 3, 0, 4, 5, 6];
+// let answer = 0;
+// let result = arr.reduce(function(sum, elem) { //reduceRigyt
+// 	if (elem == 0) {
+// 		answer = sum;
+// 	} else {
+// 		return sum + elem;
+// 	}
+// });
+// if(answer == undefined){answer = result};
+// log(answer);  
+
+// let arr = [1, 2, 3, 0, 4, 5, 6];
+// let answer = 0;
+// let anslen = [];
+// let result = arr.reduce(function(sum, elem) { //reduceRigyt
+// 	if (sum >= 10) {
+// 		answer = sum;
+// 	} else {
+//         anslen += elem;
+// 		return sum + elem;
+// 	}
+// });
+// log(anslen.length);  
+
+
+const product = {
+    name: "apple",
+    price: 25,
+    showPrice(){
+        console.log(this.price);
+    },
+}
+function callAction(action){
+    action()
+}
+log(product.showPrice);
+callAction(product.showPrice);
