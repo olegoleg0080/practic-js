@@ -634,15 +634,159 @@ log(shopList.sumPrices("apple"))
 // log(anslen.length);  
 
 
-const product = {
-    name: "apple",
-    price: 25,
-    showPrice(){
-        console.log(this.price);
-    },
-}
-function callAction(action){
-    action()
-}
-log(product.showPrice);
-callAction(product.showPrice);
+// const product = {
+//     name: "apple",
+//     price: 25,
+//     showPrice(){
+//         log(this.price);
+//     },
+// }
+// function callAction(action){
+//     action()
+// }
+// callAction(product.showPrice);
+
+// const showName = function() {
+//     log('this',this);
+//     log('this.name',this.name);
+// }
+// // showName();
+// const user = {
+//     name: 'oleg',
+// }
+// user.showUserName = showName;
+// user.showUserName();
+// // const fnB = user.showName;
+// // log(fnB);
+// // fnB();
+
+// const userB = {
+//     name: 'oleg',
+//     age: 40,
+// }
+// // log(userB);
+// // userB.changeName('masha')
+// const apdateName = function (newName){
+//     log('kiril', this);
+//     this.name = newName;
+// }
+// // userB.changeName = apdateName;
+
+// log(userB);
+// const apdateNameUserB = apdateName.bind(userB);
+
+// apdateNameUserB('kiril');
+// log(userB)
+
+
+//?  const createTiacher = function(teacher) {
+//?      const teacherLesson = function(lesson) {
+//?          log(`${teacher} викладає ${lesson}`);
+//?      }
+//?      return teacherLesson;
+//?  }
+//?  const andrew = createTiacher('andrew');
+//?  andrew('inform');
+//?  andrew('метем');
+//?  const oleg = createTiacher('oleg');
+//?  oleg('укр мову');
+
+//! const leater = ["a","A","b","B"];
+//! leater.sort((a,b) => a.localeCompare(b))
+//! log(leater);
+
+//* const letme = function(callback) {
+//*     const nameUser = prompt('name = ');
+//*     callback(nameUser);
+//* }
+//* const greet = function(name) {
+//*     log(`hello ${name}`)
+//* }
+//* letme(greet);
+
+//? const makeProduct = function (name, price, callback) {
+//?     const id = Math.floor(Math.random() * 1000);
+//?     const product = {name,price,id};
+//?     callback(product); 
+//? }
+//?     const showProduct = function(product){
+//?     console.log(product);
+//?     }
+//?     makeProduct('Oleg', 1, showProduct);
+
+//*  const maceshef = function(shef) {
+//*      const macedish = function(dish) {
+//*          log(`${shef} викладає ${dish}`);
+//*      }
+//*      return macedish;
+//*  }
+//*  const andrew = maceshef('andrew');
+//*  andrew('inform');
+//*  andrew('метем');
+//*  const oleg = maceshef('oleg');
+//*  oleg('укр мову');
+
+
+//! ДЗ 5.04
+
+//! 1
+//* let arra = [1,2,3,4,5,6];
+//* function call(elem) {
+//*     elem.forEach(element => log(element += 1));
+//* }
+//* function each(array, callback) {
+//*     call(array);
+//*     return arra;
+//* }
+//* log(each(arra, call)); 
+
+//! 2
+//* let a = 0;
+//* function makeCounter() {
+//*     a += 1;
+//*     //? console.clear(a)
+//*     log(a);
+//* }
+//* makeCounter()
+//* makeCounter()
+//* makeCounter()
+//* makeCounter()
+
+//! 3
+//* const password = prompt("your password");
+//* const passwordList = ["1234", "005430","oleg_oleg"];
+//* function savePassword(password) {
+//*     if (password === "") {
+//*         return "пожалуйста введите пароль";
+//*     } else if (passwordList.includes(password)) {
+//*         return true;
+//*     } else{
+//*         return false;
+//*     }  
+//* }
+//* log(savePassword(password));
+
+//! 4
+//* const a = 100;
+//* const dis = 10;
+//* function discount(a) {
+//*     function disc(a) {
+//*         log(a - a/100*dis);
+//*     }
+//*     return disc(a);
+//* }
+//* discount(a);
+
+//! 5
+//* const a =[2,4,5,6,7]
+//* function firstNumb(e) {
+//*     for (let i = 0; i < e.length; i++) {
+//*     if (e[i] % 2 !== 0) {
+//*         return e[i];
+//*     }
+//*     }
+//* }
+//* log(firstNumb(a));
+
+
+//! 09.04
