@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,16 +6,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <title>Document</title>
 </head>
 <body>
+    <button class="modal-open" type="button" data-modal-open>
+        <svg class="svg-modal-open">
+            <use href="../img/svg/symbol-defs.svg#icon-burger-menu"></use>
+        </svg>
+    </button>
+    <button id="theme-toggle">
+        <div id="themImg"></div>
+    </button>
     <div class="cont">
         <div class="cont1">
             <a class="a" href="./text.html">text</a>
-            <button id="box1" class="b-1">B-1</button>
+            <button type="button" id="box1" class="b-1">B-1</button>
+            <p class="hallo">color</p>
+                <input type="text" class="inputLesson">
+                <div style="display: flex; column-gap: 3px;">
+                    <button class="js-btn">add</button>
+                </div>
+                <ul class="lessons"></ul>
+        </div>
+        <div class="cont2">
+            <div class="dz1">
+                <div class="div-remuve-js1">
+                    <button class="remove-js1">remove this button</button>
+                </div>
+                <div class="div-remuve-js2">
+                    <button class="remove-js2">remove this button</button>
+                </div>
+                <div class="div-remuve-js3">
+                    <button class="remove-js3">remove this button</button>
+                </div>
+            </div>
+            <div class="dz2">
+                <input type="text" id="input-jsa" class="input-js a">
+                <button class="btn-input-js">🗘</button>
+                <input type="text" id="input-jsb" class="input-js b">   
+            </div>
+        </div>
+        <div class="cont3" style="margin-top: 30px;">
+            <input placeholder="qubes" type="number" class="qontiti" min="1" max="100">
+            <button class="createQube" data-create>add</button>
+            <div id="box" class="box"></div>
+            <input  class="inputlight" type="text">
+            <button type="button" class="yes">yes</button>
+        </div>
+        <div class="cont4">
+        <div class="validation-1">
+            <input type="text" class="first-name" placeholder="Ім'я" disabled>
+            <button class="enable-first-name">Редагувати</button>
+        </div>
+        <div class="validation-2">
+            <input type="text" class="last-name" placeholder="Прізвище" disabled>
+            <button class="enable-last-name">Редагувати</button>
+        </div>
+        <div class="validation-3">
+            <input type="number" class="age" placeholder="Вік" disabled>
+            <button class="enable-age">Редагувати</button>
+        </div>
+        <button class="submit">Відправити</button>
+        </div>
+        <div class="wrapp-btn">
+            <button data-value="#ff0000" class="btn">#ff0000</button>
+            <button data-value="#00ff00" class="btn">#00ff00</button>
+            <button data-value="#0000ff" class="btn">#0000ff</button>
+            <button data-value="#ff00ff" class="btn">#ff00ff</button>
+            <button data-value="#fff000" class="btn">#fff000</button>
+        </div>
+        <div class="cont5">
+        </div>
+        <div class="cont6" style="margin-top: 20px;">
+            <button class="btn-d" data-value="oleg">oleg</button>
+            <button class="btn-d" data-value="illushka">illushka</button>
+            <button class="btn-d" data-value="globus">globus</button>
+            <button class="btn-d" data-value="Shinka">Shinka</button>
+            <button class="btn-d" data-value="arab">arab</button>
+            <button class="btn-d" data-value="maria">maria</button>
+        </div>
+        <div class="form2804">
+            <form>
+                <input type="text" id="name" name="name"><br>
+                <input type="email" id="email" name="email"><br>
+                <button type="button" id="submit" name="submit">submit</button>
+                <button type="button" id="clear-locstor">clear()</button>
+            </form>
+        </div>
+        <div class="cont7">
+            <form id="form" class="user-form">
+                <input type="text" class="form-input" name="title">
+                <input type="age" class="form-input" name="text">
+                <button class="form-btn" type="submit">submit</button>
+            </form>
+            <ul id="cards" class="card-list">
+            </ul>
         </div>
     </div>
-    <script src="../js/page.js"></script>
-    <script src="../js/index.js"></script>
+    <ul class="galerei js-galary"></ul>
+    
+    <script src="../js/refs.js" type="module"></script>
+    <script type="module"src="../js/js.js"></script>
+    <script type="module" src="../js/index.js"></script>
+    <script type="module" src="../js/page.js"></script>
+    <script src="../js/form.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <div class="madal-block is-hidden" data-modal>
+        <div class="madal">
+            <div class="madal-container container">
+                <div class="line">
+                    <div class="modal-header">
+                        <button type="button" class="modal-close" type="button" data-modal-close >
+                        <svg class="madal-close-svg" width="34px" height="34px" >
+                            <use href="../img/svg/close.svg#close"></use>
+                        </svg>
+                    </button> 
+                    </div> 
+                </div>
+                    <ul class="modal-nav-menu">
+                        <li class="nav-menu-list-item"><a href="#">Home</a></li>
+                        <li class="nav-menu-list-item"><a href="#">Skills</a></li>
+                        <li class="nav-menu-list-item"><a href="#">About Us</a></li>
+                        <li class="nav-menu-list-item"><a href="#">Pricing</a></li>
+                        <li class="nav-menu-list-item"><a href="#">Contacts</a></li>
+                    </ul>
+                    <button type="button" class="modal-btn">Lets Talk</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/modal.js"></script>
 </body>
 </html>

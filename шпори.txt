@@ -10,3 +10,4 @@ const leater = ["a","A","b","B"];
 leater.sort((a,b) => a.localeCompare(b))
 log(leater);
 Від а до я від великого до маленького
+

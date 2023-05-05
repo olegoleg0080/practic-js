@@ -1,0 +1,29 @@
+.wrrap {
+width: 800px;
+margin: 100px auto 0;
+
+text-align: center;
+}
+
+.timer {
+    margin-bottom: 40px;
+font-size: 48px;
+}
+
+.btn-left,
+.btn-right {
+width: 300px;
+height: 100px;
+font-size: 24px;
+font-weight: 700;
+letter-spacing: 6px;
+border-color: transparent;
+border-radius: 10px;
+}
+
+.btn-left{
+    background-color: #d1d0d0c3;
+}
+.btn-right{
+    background-color: #79f8c3;
+}
