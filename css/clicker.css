@@ -1,0 +1,286 @@
+
+/*!reset*/
+body {
+    font-family: Roboto;
+    margin: 0;
+    background-color: #fff; 
+    color: #333;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+    position: absolute;
+}
+p{
+    margin: 0;
+}
+input{
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    padding: 0;
+    cursor: pointer;
+}
+a{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+    border: 0;
+}
+/**maini*/
+.container1{
+    padding-top: 50px;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.best-score {
+    font-size: 72px;
+    height: 185px;
+    width: 400px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.numb{
+    color: red;
+    font-size: 86px;
+}
+.best-score-contant {
+    font-size: 72px;
+    margin: 0;
+}
+.score-board {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    font-size: 72px;
+}
+.try-again {
+    width: 300px;
+    height: 80px;
+    background-color: #D9D9D9;
+    font-size: 56px;
+    border-radius: 10px;
+}
+.start{
+    width: 300px;
+    height: 80px;
+    background-color: #D9D9D9;
+    font-size: 56px;
+    border-radius: 10px;
+}
+.CPS {
+    width: 400px;
+    height: 125px;
+    font-size: 36px;
+    background-color: #D9D9D9;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/** accounts */
+.accounts{
+    margin-right: 217px;
+}
+.create-account {
+    display: flex;
+    column-gap: 23px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 19px;
+    width: 349px;
+    height: 91px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    margin-bottom: 94px;
+}
+.name {
+    border: 0;
+    width: 160px;
+    height: 53px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    background-color: #484848;
+}
+.qub {
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+    background-color: red;
+    border-radius: 100%;
+}
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.modal {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+}
+.modal-content {
+    margin: 0 auto;
+    width: 312px;
+}
+.color-list {
+    display: flex;
+    padding: 8px;
+    column-gap: 8px;
+}
+.modal-title{
+    line-height: 0%;
+}
+.color-item {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 100%;
+}
+.color-item-red {
+    background-color: red;
+}
+.color-item-blue {
+    background-color: blue;
+}
+.color-item-green {
+    background-color: green;
+}
+.color-item-violet {
+    background-color: violet;
+}
+.color-item-yellow {
+    background-color: yellow;
+}
+.color-item-orange {
+    background-color: orange;
+}
+.color-item-gray {
+    background-color: gray;
+}
+
+.create, .delete{
+    background: transparent;
+}
+.svg-create-account{
+    width: 53px;
+    height: 53px;
+    fill: #04D000;
+}
+.svg-create-account:hover{
+    fill: #04ff00;
+}
+.svg-delete-account{
+    width: 53px;
+    height: 53px;
+    fill: #CD0000;
+}
+.svg-delete-account:hover{
+    fill: #ff0000;
+}
+.delete-account{
+    display: flex;
+    padding: 19px;
+    column-gap: 23px;
+}
+.delete-account{
+    font-weight: 100;
+    background-color: #D9D9D9;
+}
+.delete-account:first-child{
+border-radius: 10px 10px 0 0;
+}
+.delete-account:last-child{
+    border-radius: 0 0 10px 10px;
+}
+.account-list{
+    width: 349px;
+    height: 546px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+/** score  */
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 217px;
+    padding-top: 92px;
+}
+.reiting{
+    width: 400px;
+}
+.delete-account.cps{
+    font-weight: 100;
+    background-color: #D9D9D9;
+}
+.delete-account.cps:first-child{
+border-radius: 10px 10px 0 0;
+}
+.delete-account.cps:last-child{
+    border-radius: 0 0 10px 10px;
+}
+.title-score{
+    width: 200px;
+    height: 70px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D9D9D9;
+    border-radius: 20px;
+    color: #000000;
+    
+    margin-bottom: 20px;
+}
+.svg-number{
+    width: 53px;
+    height: 53px;
+}
+.scrore-result{
+    width: 50px;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+}
+.place{
+    width: 53px;
+    height: 53px;
+    content: '';
+    flex-shrink: 0;
+    background: url(../img/svg/first.svg);
+}
+.cls-1{fill:#fd5;}
+.cls-2{fill:#262626;fill-rule:evenodd;}
+/* .selected {
+    background-color: rgb(16, 255, 16);
+} */

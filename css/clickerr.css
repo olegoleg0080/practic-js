@@ -1,0 +1,248 @@
+/*! reset */
+h1,h1,h3,p{
+    margin: 0;
+}
+body {
+    font-family: Roboto;
+    margin: 0;
+    background-color: #fff; 
+    color: #333;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+    position: absolute;
+}
+p{
+    margin: 0;
+}
+input{
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    padding: 0;
+    cursor: pointer;
+}
+a{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+    border: 0;
+}
+/** main  */
+.container {
+    column-gap: 217px;
+    padding-top: 100px;
+    min-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.accounts {
+max-width: 348px;
+}
+.create-account {
+    background-color: #d9d9d9;
+    width: 348px;
+    height: 92px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    column-gap: 24px;
+}
+.color{
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+}
+.color-input{
+    width: 53px;
+    height: 53px;
+    border: none;
+    outline: none;
+}
+.name-create {
+    color: #fff;
+    text-align: center;
+    width: 154px;
+    height: 52px;
+    font-size: 48px;
+    background-color: #909090;
+    border: 0;
+    outline: none;
+}
+.create {
+    width: 53px;
+    height: 53px;
+    background: transparent;
+    fill: #00bf00;
+    cursor: pointer;
+}
+.create:hover{
+    fill: #00FF00;
+}
+.account-svg {
+    width: 53px;
+    height: 53px;
+}
+.list-account {
+    margin-top: 30px;
+    width: 348px;
+    height: 92px;
+    background-color: #D9D9D9;
+}
+.account {
+    background-color: #d9d9d9;
+    width: 348px;
+    height: 92px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    column-gap: 24px;
+}
+/* .delete-account {
+} */
+.name-account {
+    margin: 0;
+    width: 154px;
+    height: 52px;
+    text-align: center;
+    font-size: 48px;
+    color: #fff;
+    background-color: #909090;
+}
+.color {
+    width: 53px;
+    height: 53px;
+}
+.delete {
+    width: 53px;
+    height: 53px;
+    background: transparent;
+    fill: #bf0000;
+    cursor: pointer;
+}
+.delete:hover{
+    fill: #FF0000;
+}
+.clicker {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.bestScore {
+    font-size: 48px;
+    line-height: 1.2;
+}
+.basts {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0;
+}
+.best{
+    width: 400px;
+    height: 185px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+}
+.timer {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.2;
+    color: #A32323;
+}
+.clicker-btn {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.2;
+    color: #000000;
+}
+/** score */
+.account-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.score-title {
+    margin: 0;
+    width: 200px;
+    height: 70px;
+    background-color: #D9D9D9;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.list-score {
+    margin-top: 52px;
+    width: 400px;
+    height: 92px;
+    background-color: #D9D9D9;
+}
+.score-account{
+    background-color: #D9D9D9;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.color{
+    flex-shrink: 0;
+}
+.place {
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+    content: '';
+}
+.score-account:nth-child(1)>.place{
+    background: url(../img/svg/first.svg#Layer);
+}
+.score-account:nth-child(2)>.place{
+    background: url(../img/svg/second.svg#Layer);
+}
+.score-account:nth-child(3)>.place{
+    background: url(../img/svg/third.svg#Layer);
+}
+.score-account:nth-child(4)>.place{
+    background: url(../img/svg/fourth.svg#Layer);
+}
+.score-account:nth-child(5)>.place{
+    background: url(../img/svg/fifth.svg#Layer);
+}
+.score-account:nth-child(6)>.place{
+    background: url(../img/svg/sixth.svg#Layer);
+}
+.score-account:nth-child(n+7){
+    display: none;
+}
+.score {
+    font-weight: 400;
+    font-size: 48px;
+    color: #FF0000;
+}
+.try-Again{
+    display: none;
+    width: 200px;
+    height: 90px;
+    background-color: #909090;
+    color: #fff;
+    font-size: 48px;
+}
+.select{
+    background-color: #00FF00;
+}

@@ -64,6 +64,9 @@ button{
     padding-top: 100px;
     text-align: center;
 }
+.cont.el{
+    padding-top: 0;
+}
 .cont1{
     display: inline-flex;
     flex-direction: column;

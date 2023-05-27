@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["console","log"],"mappings":";AAAAA,QAAQC,IAAI","file":"src.1e27ad89.js","sourceRoot":"..\\public","sourcesContent":["console.log(\"helo2\");\r\n"]}
