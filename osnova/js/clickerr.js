@@ -1,3 +1,4 @@
+console.clear
 function dqs(selector) {
     return document.querySelector(selector);
 }
@@ -69,7 +70,7 @@ function tryAgain() {
     refs.try.style= "display: none;";
 }
 populateAccounts();
-function dataSave() {
+function dataSave() {   
     const name = refs.createName.value;
     const color = refs.createColor.value;
     let scoreResult = refs.clickerBtn.textContent;

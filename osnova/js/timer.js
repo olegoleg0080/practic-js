@@ -66,32 +66,32 @@
 // }
 
 
-//* const horses = [
-//*     'hrusha',
-//*     'arab',
-//*     'globus',
-//*     'oleg',
-//*     'shinka'
-//* ]
-//* console.log('Start');
-//* console.log(`Winer ${1}`);
-//* console.log('End');
-//* function run(horse) {
-//*     return new Promise((resolve, reject) => {
-//*         const time = randomTime(3000, 5000);
-//*         setTimeout(()=>{
-//*             resolve({horse, time})
-//*         },time)
-//*     })
-//* }
-//* //* run(horses[1]).then(res => console.log(res))
-//* const promises = horses.map(horse => run(horse))
-//* //* console.log(promises);
-//* Promise.race(promises).then(({horse, time}) => console.log(`winer ${horse} at ${time}`));
-//* Promise.all(promises).then(res => res.sort((a, b) => a.time - b.time).map(({horse, time}) => console.log(`${horse} at ${time}`)));
-//* function randomTime(min, max) {
-//*     return Math.floor(Math.random() * (max - min + 1) + min)
-//* }
+const horses = [
+    'hrusha',
+    'arab',
+    'globus',
+    'oleg',
+    'shinka'
+]
+console.log('Start');
+console.log(`Winer ${1}`);
+console.log('End');
+function run(horse) {
+    return new Promise((resolve, reject) => {
+        const time = randomTime(3000, 5000);
+        setTimeout(()=>{
+            resolve({horse, time})
+        },time)
+    })
+}
+//* run(horses[1]).then(res => console.log(res))
+const promises = horses.map(horse => run(horse))
+//* console.log(promises);
+Promise.race(promises).then(({horse, time}) => console.log(`winer ${horse} at ${time}`));
+Promise.all(promises).then(res => res.sort((a, b) => a.time - b.time).map(({horse, time}) => console.log(`${horse} at ${time}`)));
+function randomTime(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
