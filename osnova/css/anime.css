@@ -99,8 +99,13 @@ header {
 }
 
 /* main */
+/*
+!
+!
+!
+*/
 main {
-    /* height: 90%; */
+    height: 90%;
     box-sizing: border-box;
     padding-top: 80px;
     padding-bottom: 80px;

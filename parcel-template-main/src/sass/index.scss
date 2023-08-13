@@ -1,2 +1,27 @@
 @import './common';
 @import './example';
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px 40px;
+}
+form{
+    margin: 0 auto;
+}
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  max-width: 30%;
+  text-align: start;
+}
+.container-card {
+  color: #fff;
+  font-size: 24px;
+  background-color: aqua;
+  padding: 10px;
+  border-radius: 20px 20 0 20;
+}
